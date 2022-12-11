@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import 'normalize.css';
+import React from 'react';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header className='header'>
+      <div className="container">
+        <div className="nav-container">
+          <a href="#" className="logo">Сайт портфолио</a>
+          <nav className="nav">
+            <ul className='nav__list'>
+              <li className='nav__item'><a href="#" className="nav__link active">Мои работы</a></li>
+              <li className='nav__item'><a href="#" className="nav__link">Навыки</a></li>
+              <li className='nav__item'><a href="#" className="nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <button className='theme-toogle'>
+          <img className='theme-toogle__sun' src='/images/sun.svg' alt='Светлая тема'></img>
+          <img className='theme-toogle__sun' src='/images/moon.svg' alt='Темная тема'></img>
+        </button>
+        </div>
+      </div>
+    </header>
   );
 }
 
