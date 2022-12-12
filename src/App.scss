@@ -28,6 +28,7 @@ button{
 }
 p{
   padding: 0;
+  margin: 0;
 }
 a{
   text-decoration: none;
@@ -41,16 +42,26 @@ body{
   padding: 0;
   font-family: 'Poppins',sans-serif;
   font-weight: 400;
+  min-width: 320px;
+  background: #E5E5E5;
+}
+.site-container{
+  overflow: hidden;
 }
 .container{
   max-width: 1210px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
+}
+.title{
+  font-weight: 700;
+  font-size: 60px;
 }
 
 .header{
-  padding: 0 20px;
-  background-color: #171718;;
+  padding: 20px 0;
+  background-color: #171718;
+  border-bottom: 1px solid #26292D;
 }
 .nav-container{
   display: flex;
@@ -72,10 +83,10 @@ body{
     position: relative;
     &::after{
       content: '';
-      bottom: 0;
+      bottom: -3px;
       left: 0;
       position: absolute;
-      width: 0%;
+      width: 0;
       height: 3px;
       background: #5C62EC;
       transition: all 0.2s linear;
@@ -86,6 +97,9 @@ body{
   }
   &__link.active{
     border-bottom: 3px solid #5C62EC;
+  }
+  &__link.active::after{
+    width: 0;
   }
 }
 .theme-toogle{
@@ -123,5 +137,160 @@ body{
     background: #ffffff;
     left: 0;
     z-index: 1;
+  }
+}
+.hero{
+  min-height: 695px;
+  padding: 20px 0;
+  background: #171718;
+  color: #FAFAFA;
+  position: relative;
+  background-image: url('../public/images/Abstract.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  &__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  &__link{
+    display: block;
+    padding: 10px;
+    background-color: #5C62EC;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    transition: background 0.2s linear;
+    &:hover{
+      background-color: #ec5c5c;
+    }
+  }
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__description{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+.project{
+  padding: 70px 0;
+  &__title{
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #5C62EC;
+    margin-bottom: 60px;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item{
+    max-width: 370px;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    transition: box-shadow 0.2s linear;
+    a{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    &:hover{
+      box-shadow: inset 0 0 1px 5px #5C62EC;
+    }
+  }
+  &__img-title{
+    color: #171718;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: auto;
+    text-align: center;
+  }
+  &__img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+}
+.footer{
+  padding: 69px 0;
+  background-color: #171718;
+  &__container{
+    display: flex;
+    justify-content: center;
+  }
+}
+.social-list{
+  display: flex;
+  align-items: center;
+  &__item:not(:last-child){
+    margin-right: 30px;
+  }
+  &__link{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &--vk{
+      background-image: url(../public/images/vk.png);
+    }
+    &--whatsap{
+      background-image: url(../public/images/whatsapp.png);
+    }
+    &--telegram{
+      background-image: url(../public/images/telegram.png);
+    }
+  }
+}
+.burger{
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  &__line{
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    transition: all 0.2s linear;
+    &--top{
+      top: 0;
+      left: 0;
+    }
+    &--middle{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    &--bottom{
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &.active .burger__line--top{
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  &.active .burger__line--middle{
+    height: 0;
+  }
+  &.active .burger__line--bottom{
+    transform: rotate(-45deg);
+    bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero{
+    background-color: red;
   }
 }
