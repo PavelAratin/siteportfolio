@@ -1,0 +1,52 @@
+.mobile-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  height: 30%;
+  width: 50%;
+  padding: 50px 25px;
+  transform: translateX(-101%);
+  transition: transform 0.4s linear;
+  &.active{
+    transform: translateX(0);
+  }
+  .nav{
+    &__list{
+      flex-direction: column;
+      align-items: baseline;
+    }
+    &__item:not(:last-child){
+      margin: 0;
+      margin-bottom: 30px;
+    }
+    &__link{
+      color: #171718;
+    }
+  }
+  .burger-close{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 30px;
+    left: auto;
+    right: 30px;
+  cursor: pointer;
+    &__line{
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #171718;
+      &--top{
+        top: 2px;
+        transform: rotate(45deg);
+      }
+      &--bottom{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.hero{
+  min-height: 695px;
+  padding: 20px 0;
+  background: #171718;
+  color: #FAFAFA;
+  position: relative;
+  background-image: url('../../../public/images/Abstract.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  &__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  &__link{
+    display: block;
+    padding: 10px;
+    background-color: #5C62EC;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    transition: background 0.2s linear;
+    &:hover{
+      background-color: #ec5c5c;
+    }
+  }
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__description{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}

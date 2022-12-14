@@ -1,0 +1,32 @@
+.footer{
+  padding: 69px 0;
+  background-color: #171718;
+  &__container{
+    display: flex;
+    justify-content: center;
+  }
+}
+.social-list{
+  display: flex;
+  align-items: center;
+  &__item:not(:last-child){
+    margin-right: 30px;
+  }
+  &__link{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &--vk{
+      background-image: url(../../../public/images/vk.png);
+    }
+    &--whatsap{
+      background-image: url(../../../public/images/whatsapp.png);
+    }
+    &--telegram{
+      background-image: url(../../../public/images/telegram.png);
+    }
+  }
+}
