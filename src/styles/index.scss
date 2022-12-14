@@ -60,39 +60,38 @@ body{
 }
 @media screen and (max-width: 768px) {
   .burger{
-    display: block;
+    display: block !important;
   }
   .nav-container .nav{
     display: none;
   }
   .logo{
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .title {
     font-size: 40px;
   }
   .hero{
-    background-color: red;
-    min-height: 400px;
+    min-height: 400px !important;
   }
   .project{
-    padding: 45px 0;
+    padding: 45px 0 !important;
     &__title{
-      margin-bottom: 30px;
+      margin-bottom: 30px !important;
     }
     &__img-title{
       font-size: 20px;
     }
   }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 500px){
   .hero__title {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   .hero__description{
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .footer{
-    padding: 30px 0;
+    padding: 30px 0 !important;
   }
 }

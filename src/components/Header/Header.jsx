@@ -1,19 +1,19 @@
-
 import { useState } from "react";
-import './Header.scss';
+import "./Header.scss";
 
-const Header = () => {
+const Header = ({displayMobileMenuHandler}) => {
   const [tehemeToggle, setThemeToggle] = useState(false);
   const themeToggleHandler = () => {
-    setThemeToggle(!tehemeToggle)
-  }
+    setThemeToggle(!tehemeToggle);
+  };
+  const burgerClickHandler = () => {
+    displayMobileMenuHandler()
+  };
   return (
     <header className="header">
       <div className="container">
         <div className="nav-container">
-          <button
-            className='burger'
-          >
+          <button className="burger" onClick={burgerClickHandler}>
             <span className="burger__line burger__line--top"></span>
             <span className="burger__line burger__line--middle"></span>
             <span className="burger__line burger__line--bottom"></span>
