@@ -1,8 +1,13 @@
-import styles from './SkillsPages.module.scss';
+import './SkillsPages.scss';
 
 const SkillsPages = () => {
   return (
-    <h1>Skills Pages</h1>
+    <div className='skills'>
+      <div className="container">
+      <h1 className='title skills__title'>FRONTEND</h1>
+      <p className='skills__description'>HTML,CSS,JS,REACT,GIT,PHOTOSHOPE,FIGMA</p>
+      </div>
+    </div>
   )
 }
 

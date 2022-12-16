@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 
 const Header = ({displayMobileMenuHandler}) => {
@@ -18,25 +19,25 @@ const Header = ({displayMobileMenuHandler}) => {
             <span className="burger__line burger__line--middle"></span>
             <span className="burger__line burger__line--bottom"></span>
           </button>
-          <a href="#" className="logo">
+          <Link to="/" className="logo">
             Сайт портфолио
-          </a>
+          </Link>
           <nav className="nav">
             <ul className="nav__list">
               <li className="nav__item">
-                <a href="#" className="nav__link active">
+                <Link to="/projects" className="nav__link active">
                   Мои работы
-                </a>
+                </Link>
               </li>
               <li className="nav__item">
-                <a href="#" className="nav__link">
+                <Link to="/skills" className="nav__link">
                   Навыки
-                </a>
+                </Link>
               </li>
               <li className="nav__item">
-                <a href="#" className="nav__link">
+                <Link to="/contacts" className="nav__link">
                   Контакты
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

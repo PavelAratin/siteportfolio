@@ -48,6 +48,9 @@ body{
 }
 .site-container{
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .container{
   max-width: 1210px;
