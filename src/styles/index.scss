@@ -46,6 +46,24 @@ body{
   min-width: 320px;
   background: #E5E5E5;
 }
+body[data-theme="light"]{
+  .header{
+    background: #ffffff;
+  }
+  .logo{
+    color: #171718;
+  }
+  .nav__link{
+    color: #171718;
+  }
+  .hero{
+    background: #ffffff;
+    color: #171718;
+  }
+  .footer{
+    background-color: #ffffff;
+  }
+}
 .site-container{
   overflow: hidden;
   display: flex;

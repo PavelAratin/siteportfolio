@@ -1,5 +1,6 @@
 import "./MobileMenu.scss";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const MobileMenu = ({ displayMobileMenu,displayMobileMenuHandler }) => {
   const mobileMenuEl = useRef(null)
@@ -12,19 +13,19 @@ const MobileMenu = ({ displayMobileMenu,displayMobileMenuHandler }) => {
       <nav className="nav">
         <ul className="nav__list">
           <li className="nav__item">
-            <a href="#" className="nav__link active">
+            <Link to="/projects" className="nav__link active">
               Мои работы
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a href="#" className="nav__link">
+            <Link to="/skills" className="nav__link">
               Навыки
-            </a>
+            </Link>
           </li>
           <li className="nav__item">
-            <a href="#" className="nav__link">
+            <Link to='/contacts' href="#" className="nav__link">
               Контакты
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

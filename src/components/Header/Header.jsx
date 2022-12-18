@@ -1,15 +1,20 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./Header.scss";
 
-const Header = ({displayMobileMenuHandler}) => {
+const Header = ({ displayMobileMenuHandler }) => {
   const [tehemeToggle, setThemeToggle] = useState(false);
+  const [themeBody, setThemeBody] = useState("dark");
   const themeToggleHandler = () => {
     setThemeToggle(!tehemeToggle);
+    setThemeBody(themeBody === "dark" ? "light" : "dark");
   };
   const burgerClickHandler = () => {
-    displayMobileMenuHandler()
+    displayMobileMenuHandler();
   };
+  useEffect(() => {
+    document.body.setAttribute("data-theme", themeBody);
+  }, [themeBody]);
   return (
     <header className="header">
       <div className="container">
@@ -19,30 +24,30 @@ const Header = ({displayMobileMenuHandler}) => {
             <span className="burger__line burger__line--middle"></span>
             <span className="burger__line burger__line--bottom"></span>
           </button>
-          <Link to="/" className="logo">
+          <NavLink to="/" className="logo">
             Сайт портфолио
-          </Link>
+          </NavLink>
           <nav className="nav">
             <ul className="nav__list">
               <li className="nav__item">
-                <Link to="/projects" className="nav__link active">
+                <NavLink to="/projects" className="nav__link">
                   Мои работы
-                </Link>
+                </NavLink>
               </li>
               <li className="nav__item">
-                <Link to="/skills" className="nav__link">
+                <NavLink to="/skills" className="nav__link">
                   Навыки
-                </Link>
+                </NavLink>
               </li>
               <li className="nav__item">
-                <Link to="/contacts" className="nav__link">
+                <NavLink to="/contacts" className="nav__link">
                   Контакты
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>
           <button
-            className={`theme-toogle ${tehemeToggle ? "dark" : "light"}`}
+            className={`theme-toogle ${tehemeToggle ? "light" : "dark"}`}
             onClick={themeToggleHandler}
           >
             <img
