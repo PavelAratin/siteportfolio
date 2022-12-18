@@ -1,0 +1,26 @@
+[
+  {
+    "title":"Магазин игр на REACT JS",
+    "img":"images/project1.jpg"
+  },
+  {
+    "title":"Приложение страны на REACT JS",
+    "img":"images/project2.jpg"
+  },
+  {
+    "title":"Дашборд на REACT JS",
+    "img":"images/project3.jpg"
+  },
+  {
+    "title":"Интернет магазин самокатов",
+    "img":"images/project4.jpg"
+  },
+  {
+    "title":"Лендинг Blanchard",
+    "img":"images/project5.jpg"
+  },
+  {
+    "title":"Интернет магазин мебели",
+    "img":"images/project6.jpg"
+  }
+]

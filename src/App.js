@@ -2,7 +2,7 @@ import 'normalize.css';
 import './styles/index.scss';
 import React from 'react';
 import { useState } from 'react';
-import { Routes,Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 //components
 import Footer from './components/Footer/Footer';
 import Header from './components/Header';
