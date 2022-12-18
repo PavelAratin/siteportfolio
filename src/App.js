@@ -11,6 +11,7 @@ import Projects from './components/Projects';
 import ContactsPages from './pages/ContactsPages';
 import HomePage from './pages/HomePage';
 import SkillsPages from './pages/SkillsPages/SkillsPages';
+import ProjectPage from './pages/ProjectPage';
 
 function App() {
   const [displayMobileMenu, setDisplayMobileMenu] = useState(false);
@@ -24,6 +25,7 @@ function App() {
         <Route path='/' element={<HomePage></HomePage>}></Route>
         <Route path='/projects' element={<Projects></Projects>}></Route>
         <Route path='/skills' element={<SkillsPages></SkillsPages>}></Route>
+        <Route path='projects/:title' element={<ProjectPage></ProjectPage>}></Route>
         <Route path='/contacts' element={<ContactsPages></ContactsPages>}></Route>
       </Routes>
       <Footer></Footer>
