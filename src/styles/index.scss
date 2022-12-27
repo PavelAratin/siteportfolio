@@ -107,6 +107,26 @@ body[data-theme="light"]{
   .contacts__min-title{
     font-size: 25px !important;
   }
+  .current-project__wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .current-project__title{
+    font-size: 24px !important;
+  }
+  .current-project-stack__title{
+    font-size: 16px !important;
+  }
+  .current-project__links{
+    flex-direction: column;
+  }
+  .current-project__link{
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+  .current-project__link{
+    width: 100% !important;
+  }
 }
 @media screen and (max-width: 500px){
   .hero__title {

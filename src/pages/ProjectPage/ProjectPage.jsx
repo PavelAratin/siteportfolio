@@ -13,6 +13,7 @@ const ProjectPage = () => {
         setCurrentProjects(data.filter((item) => item.title === title));
       });
   }, []);
+  // console.log(currentProjects[0].stack);
   return (
     <div className="current-project">
       <div className="container">

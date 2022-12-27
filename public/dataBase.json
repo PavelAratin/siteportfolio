@@ -3,7 +3,7 @@
     "id":0,
     "title":"Магазин игр на REACT JS",
     "img":"images/project1.jpg",
-    "stack":"HTML,CSS,JS,REACT,REDUX,SPA,GIT",
+    "stack":"HTML, CSS, JS, REACT, REDUX, SPA, GIT",
     "urlGithub":"https://github.com/PavelAratin/gamestore",
     "urlVercel":"https://gamestore-amber.vercel.app/"
   },
@@ -11,7 +11,7 @@
     "id":1,
     "title":"Приложение страны на REACT JS",
     "img":"images/project2.jpg",
-    "stack":"HTML,CSS,JS,REACT,REDUX,SPA,GIT",
+    "stack":"HTML, CSS, JS, REACT, REDUX, SPA, GIT",
     "urlGithub":"https://github.com/PavelAratin/countryspareact",
     "urlVercel":"https://countryspareact.vercel.app/"
   },
@@ -19,7 +19,7 @@
     "id":2,
     "title":"Дашборд на REACT JS",
     "img":"images/project3.jpg",
-    "stack":"HTML,CSS,JS,REACT,REDUX,GIT",
+    "stack":"HTML, CSS, JS, REACT, REDUX, GIT",
     "urlGithub":"https://github.com/PavelAratin/DashbordReactRedux",
     "urlVercel":"https://dashbordreactredux.vercel.app/"
   },
@@ -27,7 +27,7 @@
     "id":3,
     "title":"Интернет магазин самокатов",
     "img":"images/project4.jpg",
-    "stack":"HTML,CSS,JS,GIT,GULP,FIGMA",
+    "stack":"HTML, CSS, JS, GIT, GULP, FIGMA",
     "urlGithub":"https://github.com/PavelAratin/KuGoo",
     "urlVercel":"https://pavelaratin.github.io/KuGoo/app/"
   },
@@ -35,7 +35,7 @@
     "id":4,
     "title":"Лендинг Blanchard",
     "img":"images/project5.jpg",
-    "stack":"HTML,CSS,JS,GIT,GULP,FIGMA",
+    "stack":"HTML, CSS, JS, GIT, GULP, FIGMA",
     "urlGithub":"https://github.com/PavelAratin/Blanchard",
     "urlVercel":"https://pavelaratin.github.io/Blanchard/app/"
   },
@@ -43,7 +43,7 @@
     "id":5,
     "title":"Интернет магазин мебели",
     "img":"images/project6.jpg",
-    "stack":"HTML,CSS,JS,GULP,GIT,FIGMA",
+    "stack":"HTML, CSS, JS, GULP, GIT, FIGMA",
     "urlGithub":"https://github.com/PavelAratin/sitDownPlease",
     "urlVercel":"https://pavelaratin.github.io/sitDownPlease/app/"
   }
