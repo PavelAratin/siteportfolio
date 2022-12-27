@@ -52,12 +52,12 @@ const Header = ({ displayMobileMenuHandler }) => {
           >
             <img
               className="theme-toogle__sun"
-              src="../../../public/images/Sun.svg"
+              src="/images/Sun.svg"
               alt="Светлая тема"
             ></img>
             <img
               className="theme-toogle__sun"
-              src="./images/moon.svg"
+              src="/images/Moon.svg"
               alt="Темная тема"
             ></img>
           </button>
