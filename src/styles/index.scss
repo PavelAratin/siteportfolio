@@ -127,6 +127,10 @@ body[data-theme="light"]{
   .current-project__link{
     width: 100% !important;
   }
+  .current-project__left,
+  .current-project__right{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 500px){
   .hero__title {
