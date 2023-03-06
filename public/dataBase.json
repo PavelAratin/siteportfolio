@@ -46,5 +46,21 @@
     "stack":"HTML, CSS, JS, GULP, GIT, FIGMA",
     "urlGithub":"https://github.com/PavelAratin/sitDownPlease",
     "urlVercel":"https://pavelaratin.github.io/sitDownPlease/app/"
+  },
+  {
+    "id":6,
+    "title":"Приложение коротких ссылок Shortly",
+    "img":"images/project7.jpg",
+    "stack":"HTML, CSS, JS, REACT,NEXT,FIREBASE, GIT, FIGMA",
+    "urlGithub":"https://github.com/PavelAratin/shortly",
+    "urlVercel":"https://shortly-smoky.vercel.app/"
+  },
+  {
+    "id":7,
+    "title":"Пошаговая форма авторизации",
+    "img":"images/project8.jpg",
+    "stack":"HTML, CSS, JS, REACT,REDUX,",
+    "urlGithub":"https://github.com/PavelAratin/multyStepForm",
+    "urlVercel":"https://multy-step-form.vercel.app/"
   }
 ]
